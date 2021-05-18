@@ -4,7 +4,6 @@
 
 %processArgs(Args, A, S, Z, paths)
 processArgs([], A, S, Z, Paths) :-
-  %print(Paths),
   basename(A, S, Z, Paths).
 processArgs(['--help'| _], _, _, _, _) :-
   format('Uso:  basename NOME [SUFIXO]
